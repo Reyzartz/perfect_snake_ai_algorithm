@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./Style.css" type="text/css" rel="stylesheet ">
+    <title>The Snake Game</title>
+  </head>
+  <body>
+    <main>
+      <canvas></canvas>
+      <div class="options">
+        <div class="score-box">
+          <header>SCORE</header>
+          <div id="score">0000</div>
+        </div>
+        <div class="controls" >
+          <header>GRID SIZE</header>
+            <input id="gridSize" type="number" value="20"/>
+            <header>SPEED</header>
+            <input id="speed" type="number" value="4"/>
+        </div>
+        <div class="player">
+            <header>PLAYER</header>
+
+            <input type="button" name="player" id = "human" class="btn" onclick="changePlayer('human')" value="HUMAN"><br>
+            <input type="button" name="player" id = "computer" class="btn" onclick="changePlayer('computer')" value="COMPUTER"><br>
+        </div>
+      </div>
+    </main>
+    
+    <script src='./text.js '></script>
+    <script src='./snake.js'></script>
+    <script src='./display.js'></script>
+    <script src='./init.js '></script>
+    <script src='./a-star.js'></script>
+    <script src='./food.js'></script>
+    <script src='./main.js'></script>
+    
+  </body>
+</html>
